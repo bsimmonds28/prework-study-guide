@@ -10,7 +10,8 @@
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie." />
+      <img src="./assets/software-engineer-graphic.png" alt="Profile image of software engingeer graphic." />
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
     </header>
     <main>
       <section class="card" id="html-section">
@@ -37,6 +38,12 @@
       <section class="card" id="git-section">
         <h2>Git</h2>
           <ul>
+            <li>Git is a version control system that lets you manage and keep track of each version of your project. To access Git, we use the command line. However, Git commands are not the same as the bash commands such as cd and mkdir that we use to navigate and create directories or perform other tasks. Git commands always start with git and are used to save and track versions of your code. Using Git commands, we can initiate (or create) a repo, add our code to the repo, and view the different versions of our code, which are each stored in a unique commit.</li>
+            <li>Git is great for tracking changes locally on your own computer, but to collaborate with others, you need to use another tool, GitHub. GitHub is a cloud-based hosting service that allows us to keep track of our projects inside repositories that are stored remotely. Using GitHub not only allows us to store our code, but also to easily collaborate with others.</li>
+            <li>It is important to note that while GitHub is popular, there are other Git-based repository hosting services, such as Bitbucket and SourceForge. However, for this course, we will use GitHub, which is free, to share work and collaborate.</li>
+            <li>touch script.js - create a new file inside the assets folder</li>
+            <li>git checkout -b feature/add-js: create a new branch for the JavaScript file</li>
+            <li>cd - navigate to folder</li>
             <li>git status: checks what branch we are currently on</li>
             <li>git checkout -b branch-name: creates a new branch and switches to it</li>
           </ul>
@@ -44,7 +51,21 @@
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
           <ul>
-            <li>Enter your Javascript notes here</li>
+            <li>In coding parlance, a variable is simply a named container that allows us to store data in our code.</li>
+            <li>A method is a set of instructions that can be executed by a computer.</li>
+            <li>Chrome DevTools: right-click anywhere in the browser window and select "Inspect" from the menu, select console.</li>
+            <li>Control flow is the order in which a computer executes code in a script. In JavaScript, code runs from the first statement at the top of the page, down to the last statement at the bottom of the page.</li>
+            <li>An if statement is a way of introducing decision-making into our code. Just like its name sounds, when using the if statement, code will only execute if the statement meets a condition, or is true. When the computer encounters an if statement in a JavaScript file, it will check to see if the condition that we provide is truthy. If it is, then it will do whatever action we ask it to do in between the curly brackets. If the condition isn’t true or has a value that isn’t truthy, then the computer will ignore whatever is in between the curly brackets and move on.</li>
+            <li>A value is considered falsy if it is one of the following values: 0, -0, On, "", null, undefined, NaN, or a Boolean data type with the value of false. All other values, including a Boolean with the value of true, are considered truthy.</li>
+            <li>The strict equality operator (===) checks to see if two values are equal, and returns a Boolean result true if the values are equal and false if the values are not equal.</li>
+            <li>An array is a single variable that is used to hold a group of data. Arrays are typically used to hold data that is related in some way. Arrays are not limited to contain only a single type of data. A single array can store different types of data, such as strings, numbers, and so on.</li>
+            <li>To work with individual data items inside an array, we need to have one more piece of information: the location of the data item in the array. This location is identified with a unique number called an index. In JavaScript and many other programming languages, arrays are zero-indexed and sequential. This means that the first item in any array has an index of 0, not 1.</li>
+            <li>A for loop uses the predictable pattern of indices to perform a task on all the items in an array by allowing a single code block to be executed over and over. Developers must use another statement, such as the conditional if statement that we just learned, to interrupt the control flow by executing a block of code a specific number of times. In order to use the for loop, we need the shape's index and the array's length.</li>
+            <li>We can find the length of an array by using a built-in property of an array, appropriately named length.</li>
+            <li>The code x++ is a shortcut way of writing x+1.</li>
+            <li>Commenting out code makes it inactive without deleting it, just in case you need it later. To comment out multiple lines of JavaScript code, put /* before and */ after the block of code.</li>
+            <li>To declare a function, we use the function keyword and then give our function a unique name followed by parentheses. Then we add curly brackets {} that contain the code for the task we want to perform. In our example, we created two separate functions: one for our for loop and one for our if statement.</li>
+            <li>To randomize our selection, we need to use a special Math function that helps us select a random number. Math.floor() and Math.random() are both properties of JavaScript's built-in Math object that can be used together to generate a random number.</li>
           </ul>
       </section>
     </main>
@@ -52,5 +73,6 @@
     <footer>
       <p>I can code!</p>
     </footer>
+    <script src="./assets/script.js"></script>
   </body>
 </html>
